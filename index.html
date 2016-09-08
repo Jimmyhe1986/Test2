@@ -1,63 +1,141 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!DOCTYPE html>
+       <html>
+       <head>
+         <style type="text/css">
+          p1 {background-color: yellow }
+          </style> 
 
-	<title>PubNub Chat Demo with OAuth & PubNub Access Manager</title>
-	<meta name="description" content="Simple Chat Room">
-	<meta name="author" content="Tomomi Imura  @girlie_mac">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css">
-</head>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>       
+       <script type="text/javascript">
+$(document).ready(function(){
+$(".flip1").click(function(){
+$(".panel1").toggle();
+  });
+});
+</script>       
+</head>       
+       <body> 
+      <p class="flip1">1.Q：客户来电表扬区域工程师/应用？</p>      
+      <div class="panel1" style="display: none;">
+      <p>A：记录来电客户姓名、电话、医院名称、详细表扬内容以及被表扬者姓名。</p> 
+      <p>在公共邮箱发送邮件给其AM，抄送被表扬者;其主管 和Jenna Shan（服务战略发展部），打上表扬标签。</p> 
+         
+      
 
-<body>
-	<% if (!user) { %>
-	<header class="title">
-		<img class="logo" src="images/pubnub-secure-chat.png">
-	</header>
+      <table width="500" border="1" 
+cellspacing="0">
+      <tr>
+        <td align="center">Case Qualification</td>      
+        <td align="center">Case Type</td> 
+        <td align="center">Subject</td>   
+</tr>         
+      <tr>
+        <td align="center">Non Product Request</td>      
+        <td align="center">IT/Software</td> 
+        <td align="center">表扬</td>  
+</tr>      
+  
+</table>      
+<Br> 
+       <img src="https://sites.google.com/a/roche.com/questions-answer-external/complimentcomplaint/%E8%A1%A8%E6%89%AC%E5%8C%BA%E5%9F%9FFSE%EF%BC%8DFAS.png" >
+       
+</div>   
+        
 
-	<section id="login">
-		<p>Yo, you need to <span>login</span> to chat!</p>
-		<a href="/login" class="button"><i class="fa fa-github"></i> Login with GitHub</a>
-	</section>
+   
+</body>       
+     
+</html> 
+<Br> 
+<Br> 
 
-	<section id="main" role="main" hidden>
+<!DOCTYPE html>
+       <html>
+       <head>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>       
+       <script type="text/javascript">
+$(document).ready(function(){
+$(".flip2").click(function(){
+$(".panel2").toggle();
+  });
+});
+</script>       
+</head>       
+       <body> 
+      <p class="flip2">2.Q：客户来电表扬代理商工程师/应用？</p>      
+      <div class="panel2" style="display: none;">
+      <p>A：记录来电客户姓名、电话、医院名称、详细表扬内容以及被表扬者姓名。</p> 
+      <p>在公共邮箱发送邮件给曹式钢，抄送给王代兵、郭艳，打上标签。</p> 
+     
+ 
+       <table width="500" border="1" 
+cellspacing="0">
+      <tr>
+        <td align="center">Case Qualification</td>      
+        <td align="center">Case Type</td> 
+        <td align="center">Subject</td>    
+</tr>         
+      <tr>
+        <td align="center">Non Product Request</td>      
+        <td align="center">IT/Software</td> 
+        <td align="center">表扬</td>  
+</tr>      
 
-	<% } else { %>
-	<header>
-		<h1>PubNub Access Manager Chat Demo</h1>
-	</header>
-
-	<section id="main" role="main">
-		<p class="me"><img src="<%= user._json.avatar_url %>" class="avatar" align="left"><%= user.displayName %> (<%= user.username %>)</p>
-	<% } %>
-	
-		<div id="chat">
-			<input type="text" id="input" name="text" placeholder="Type your message..." required>
-			<input type="button" id="send" value="Send" />
-		</div>
-		<p id="presence"></p>
-		<p id="action"></p>
-		<div id="output"></div>
-	</section>
-
-	<footer>
-		Green Vector Background by <a href="http://vectorportal.deviantart.com/art/Green-Vector-Background-209349858">Vectorportal</a> CC-BY 3.0 
-	</footer>
+</table>  
+<Br>  
+<img src="https://sites.google.com/a/roche.com/questions-answer-external/complimentcomplaint/%E8%A1%A8%E6%89%AC%E5%A4%96%E5%8C%85.png" >
+ 
+  
+</div>      
+   
+</body>       
+     
+</html>      
+<Br>  
+<Br>  
 
 
-	<script src="//cdn.pubnub.com/pubnub-3.7.12.min.js"></script>
-	<script src="js/ecc-0.3.min.js"></script>
+<!DOCTYPE html>
+       <html>
+       <head>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>       
+       <script type="text/javascript">
+$(document).ready(function(){
+$(".flip3").click(function(){
+$(".panel3").toggle();
+  });
+});
+</script>       
+</head>       
+       <body> 
+      <p class="flip3">3.Q：客户来电抱怨售前售后，如何处理？</p>      
+      <div class="panel3" style="display: none;">
+      <p>A：记录来电客户姓名、电话、医院名称、详细内容，按产品线和相应区域</p>      
+      <p>升级至上一级直属主管或经理，通过公邮发送升级处理邮件，抄送相关责任人。</p> 
 
-	<script>
-	<% if (user) { %>
-		window.user = {id:"<%= user.id %>", username: "<%= user.username %>", avatar: "<%= user._json.avatar_url %>", accessToken: "<%= user.accessToken %>", eccKey: "<%= user.eccKey %>"};
-	<% } %>
-	</script>
+            <table width="500" border="1" 
+cellspacing="0">
+      <tr>
+        <td align="center">Case Qualification</td>      
+        <td align="center">Case Type</td>  
+        <td align="center">Subject</td>   
+</tr>         
+      <tr>
+        <td align="center">Non Product Request</td>      
+        <td align="center">IT/Software</td>  
+         <td align="center">抱怨</td>    
+</tr>      
+  
+</table>  
+<Br> 
+       <img src="https://sites.google.com/a/roche.com/questions-answer-external/complimentcomplaint/%E5%AE%A2%E6%88%B7%E6%8A%B1%E6%80%A8.png" >
+  
+</div>      
+   
+</body>       
+     
+</html>      
+<Br>  
+<Br>  
 
-	<script src="js/app.js"></script>
-	
-</body>
-</html>
+
